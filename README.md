@@ -27,6 +27,10 @@ To see the hosts that would be generated from the inventory plugin, run:
 <pre><code>
 ansible-inventory -i demo.aws_ec2.yml --graph
 </code></pre>
+Or to see the group tree that would be generated from the inventory plugin (this doesn't do groupings right now), run:
+<pre><code>
+ansible-inventory -i ping_addr.yml --graph
+</code></pre>
 
 # TODO
 * Probably need to add some grouping capability and variables sets. 
