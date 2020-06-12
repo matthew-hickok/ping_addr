@@ -12,7 +12,6 @@ DOCUMENTATION = '''
     version_added: '2.8'
     author:
       - Matt Hickok
-    short_description: Ansible dynamic inventory plugin for Docker swarm nodes.
     requirements:
         - python >= 2.7
     extends_documentation_fragment:
@@ -41,7 +40,6 @@ import ipaddress
 
 
 class InventoryModule(BaseInventoryPlugin, Constructable):
-    ''' Host inventory parser for ansible using Docker swarm as source. '''
 
     NAME = 'ping_addr'
     
